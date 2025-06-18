@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Pablo Angel Rojas Mejia</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: red;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 3px solid black;
+      }
+
+      main {
+        flex: 1;
+        padding: 40px 20px;
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .button-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .custom-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+      }
+
+      .custom-button:hover {
+        background-color: darkred;
+      }
+
+      footer {
+        background-color: #eee;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          font-size: 1.5rem;
+          padding: 30px 10px;
+        }
+
+        main {
+          padding: 20px 10px;
+        }
+
+        .custom-button {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Juan Pablo Angel Rojas Mejia</header>
+
+    <main>
+      <p>¡Bienvenido a mi página personal!</p>
+      <img src="whooo.png" alt="Foto de Juan Pablo" />
+      <p>Soy estudiante apasionado por la tecnología, el desarrollo web y la innovación digital.</p>
+
+      <div class="button-container">
+        <a href="cursos.html" class="custom-button">Mis cursos</a>
+        <a href="compañero.html" class="custom-button">Mis compañeros</a>
+
+      </div>
+    </main>
+
+    <footer>&copy; 2025 Juan Pablo Angel Rojas Mejia</footer>
+  </body>
+</html>
