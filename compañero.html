@@ -28,7 +28,7 @@
         text-align: center;
       }
 
-      .companion-list {
+      .companion-buttons {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -36,26 +36,19 @@
         margin-top: 30px;
       }
 
-      .companion-card {
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 12px;
-        padding: 20px;
-        width: 200px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease;
+      .companion-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 15px 25px;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
       }
 
-      .companion-card:hover {
-        transform: scale(1.05);
-      }
-
-      .companion-photo {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 15px;
+      .companion-button:hover {
+        background-color: #0056b3;
       }
 
       footer {
@@ -72,25 +65,16 @@
     <header>Mis Compañeros</header>
 
     <main>
-      <p>Conoce a algunos de mis compañeros de clase:</p>
+      <p>Haz clic en el nombre de un compañero para visitar su página:</p>
 
-      <div class="companion-list">
-        <div class="companion-card">
-          <img src="comp1.jpg" alt="Compañero 1" class="companion-photo" />
-          <h3>Laura Sánchez</h3>
-          <p>Diseñadora UX/UI</p>
-        </div>
-        <div class="companion-card">
-          <img src="comp2.jpg" alt="Compañero 2" class="companion-photo" />
-          <h3>Carlos Pérez</h3>
-          <p>Desarrollador Backend</p>
-        </div>
-        <div class="companion-card">
-          <img src="comp3.jpg" alt="Compañero 3" class="companion-photo" />
-          <h3>Andrea Torres</h3>
-          <p>Especialista en IA</p>
-        </div>
-        <!-- Puedes agregar más compañeros aquí -->
+      <div class="companion-buttons">
+        <button
+          class="companion-button"
+          onclick="window.location.href='https://viggouni.github.io/'"
+        >
+          Viggo Alejandro García Loayza
+        </button>
+        <!-- Aquí puedes agregar más botones con otros compañeros -->
       </div>
     </main>
 
