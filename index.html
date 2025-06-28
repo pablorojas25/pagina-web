@@ -13,28 +13,30 @@
 
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f9f9f9;
+        background-color: #f4f6f8;
         color: #333;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+        line-height: 1.6;
       }
 
       header {
-        background-color: red;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
         color: white;
-        padding: 40px 20px;
+        padding: 50px 20px;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border: 3px solid black;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
       main {
         flex: 1;
         padding: 40px 20px;
         text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
         animation: fadeIn 1s ease-in-out;
       }
 
@@ -50,16 +52,21 @@
       }
 
       img {
-        width: 150px;
-        height: 150px;
+        width: 160px;
+        height: 160px;
         object-fit: cover;
         border-radius: 50%;
+        margin-top: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      p {
         margin-top: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: 1.1rem;
       }
 
       .button-container {
-        margin-top: 30px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -67,34 +74,35 @@
       }
 
       .custom-button {
-        background-color: red;
+        background-color: #2a5298;
         color: white;
         border: none;
-        padding: 12px 24px;
+        padding: 14px 30px;
         font-size: 1rem;
-        border-radius: 8px;
+        border-radius: 30px;
         cursor: pointer;
         text-decoration: none;
-        transition: background-color 0.3s ease;
-        display: inline-block;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
 
       .custom-button:hover {
-        background-color: darkred;
+        background-color: #1e3c72;
+        transform: translateY(-2px);
       }
 
       footer {
-        background-color: #eee;
+        background-color: #1e3c72;
         text-align: center;
         padding: 20px;
         font-size: 0.9rem;
-        color: #555;
+        color: #ddd;
       }
 
       @media (max-width: 600px) {
         header {
-          font-size: 1.5rem;
-          padding: 30px 10px;
+          font-size: 2rem;
+          padding: 40px 10px;
         }
 
         main {
