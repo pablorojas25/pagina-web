@@ -13,8 +13,8 @@
 
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f4f6f8;
-        color: #333;
+        background-color: #121212;
+        color: #f1f1f1;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -22,13 +22,13 @@
       }
 
       header {
-        background: linear-gradient(to right, #1e3c72, #2a5298);
+        background-color: #000000;
         color: white;
         padding: 50px 20px;
         text-align: center;
         font-size: 2.5rem;
         font-weight: bold;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
       }
 
       main {
@@ -57,12 +57,13 @@
         object-fit: cover;
         border-radius: 50%;
         margin-top: 30px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
       }
 
       p {
         margin-top: 20px;
         font-size: 1.1rem;
+        color: #dddddd;
       }
 
       .button-container {
@@ -74,29 +75,30 @@
       }
 
       .custom-button {
-        background-color: #2a5298;
+        background-color: #1f1f1f;
         color: white;
-        border: none;
+        border: 1px solid #444;
         padding: 14px 30px;
         font-size: 1rem;
         border-radius: 30px;
         cursor: pointer;
         text-decoration: none;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
       }
 
       .custom-button:hover {
-        background-color: #1e3c72;
+        background-color: #333;
         transform: translateY(-2px);
+        border-color: #666;
       }
 
       footer {
-        background-color: #1e3c72;
+        background-color: #000000;
         text-align: center;
         padding: 20px;
         font-size: 0.9rem;
-        color: #ddd;
+        color: #999;
       }
 
       @media (max-width: 600px) {
@@ -121,7 +123,7 @@
 
     <main>
       <p>¡Bienvenido a mi página personal!</p>
-      <img src="whooo.png" alt="Foto de Juan Pablo Ángel Rojas Mejía sonriendo" />
+      <img src="whooo.png" alt="Foto de Juan Pablo Ángel Rojas Mejía" />
       <p>Soy estudiante de la carrera de Ciencias de la Computación en la Universidad Católica San Pablo.</p>
 
       <div class="button-container">
